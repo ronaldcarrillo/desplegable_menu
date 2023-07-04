@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url("../img/bg.png");
+    background-size: 100%;
+}
+header{
+    height: 60px;
+    line-height: 60px;/*Línea vertical de texto. Se debe colocar el mismo valor del height.*/
+}
+header:hover{
+    background-color: black;
+    transition: all 1s;
+}
+
+header:hover a{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header nav ul li ul{
+    display: none;
+    position: absolute;/*Posiciona un elemento sobre la estructura HTML.*/
+    z-index: 1;/*Le da una prioridad a un elemento*/
+    background-color: black;
+}
+header nav ul li:hover ul{
+    display: block;
+}
+header nav:hover a{
+    color: white;
+}
+
+.contenedorZapato__orange{
+    color: #ffbd59;
+    font-size: 25px;
+}
+
+.contenedorZapato{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+picture{
+    margin-top: -65px;
+    margin-right: -150px;
+}
+
+.contenedorZapto__texto{
+    margin-top: 90px;
+    margin-left: 20px;
+}
+.contenedorZapto__texto p{
+    font-size: 20px;
+}
+
+.contenedorZapto__texto h1{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+body{
+    overflow: hidden;/*Todo lo que se salga del contenedor desaparece.*/
+}
